@@ -1,0 +1,34 @@
+/* Paleta y tipografía basadas en GitHub (Primer, modo oscuro + Mona Sans) */
+:root{
+  --canvas:#0d1117; --subtle:#161b22; --inset:#010409; --elevado:#21262d;
+  --borde:#30363d; --borde-suave:#21262d;
+  --fuerte:#f0f6fc; --texto:#e6edf3; --apagado:#8b949e;
+  --azul:#2f81f7; --azul-link:#58a6ff;
+  --boton:#238636; --boton-hover:#2ea043;
+  --verde:#3fb950; --ambar:#d29922; --morado:#a371f7;
+  --radio:12px;
+  --fuente:"Mona Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--canvas);color:var(--texto);font:400 1.0625rem/1.55 var(--fuente)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--azul);outline-offset:3px}
+h1,h2,h3{font-family:var(--fuente);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--fuerte)}
+.contenedor{width:min(1120px,92%);margin-inline:auto}
+
+.btn{display:inline-block;padding:.6rem 1.3rem;border:1px solid rgba(240,246,252,.1);border-radius:6px;background:var(--boton);color:#fff;font:600 1rem var(--fuente);text-decoration:none;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--boton-hover)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn--chico{padding:.35rem 1rem;font-size:.9rem}
+
+.nav{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:.6rem max(4%,calc((100% - 1120px)/2));background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.nav__logo{display:flex;align-items:center;gap:.7rem;font:700 1.35rem var(--fuente);letter-spacing:-.02em;color:var(--fuerte);text-decoration:none}
+.nav__logo img{height:40px;width:auto}
+.nav__links{display:flex;align-items:center;gap:1.6rem;font-weight:500}
+.nav__links a:not(.btn){text-decoration:none}
+.nav__links a:not(.btn):hover{opacity:.7}
+.nav__toggle{display:none;background:none;border:0;color:var(--fuerte);font-size:1.8rem;cursor:pointer}
+
+.pie{padding:2rem 4%;text-align:center;background:var(--inset);border-top:1px solid var(--borde-suave);color:var(--apagado);font-size:.95rem}

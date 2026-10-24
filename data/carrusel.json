@@ -1,0 +1,7 @@
+{
+  "slides": [
+    {"titulo": "Pixel Arena", "texto": "Reúne a tus amigos y compite en batallas pixeladas de hasta 4 jugadores.", "imagen": "img/slide1.svg", "etiqueta": "Multijugador", "boton_texto": "Ver más", "boton_enlace": "#juegos"},
+    {"titulo": "Cubo Rush", "texto": "Corre, salta y llega primero a la meta en carreras caóticas.", "imagen": "img/slide2.svg", "etiqueta": "Próximamente", "boton_texto": "Ver novedades", "boton_enlace": "#novedades"},
+    {"titulo": "¿Tienes una idea?", "texto": "Creamos tu juego contigo, de la idea a la partida.", "imagen": "img/slide3.svg", "etiqueta": "Servicios", "boton_texto": "Escríbenos", "boton_enlace": "#contacto"}
+  ]
+}

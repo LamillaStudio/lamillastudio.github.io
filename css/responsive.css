@@ -1,0 +1,12 @@
+@media (max-width:860px){
+  .contacto{grid-template-columns:1fr;gap:1.5rem}
+}
+@media (max-width:760px){
+  .nav__toggle{display:block}
+  .nav__links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:1rem;padding:1.2rem 4%;background:var(--subtle);display:none}
+  .nav__links.abierto{display:flex}
+  .carrusel__flecha{display:none}
+  .slide::before{background:linear-gradient(0deg,rgba(13,17,23,.95) 0%,rgba(13,17,23,.5) 70%,rgba(13,17,23,.3) 100%)}
+  .slide{align-items:flex-end;padding-bottom:5rem}
+  .seccion{padding:3.5rem 0}
+}

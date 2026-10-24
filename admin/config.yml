@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: LamillaStudio/lamillastudio.github.io   # cambia por tu usuario y repo de GitHub
+  branch: main
+
+media_folder: img/uploads
+public_folder: /img/uploads
+locale: es
+
+collections:
+  - name: contenido
+    label: Contenido de la web
+    files:
+      - name: carrusel
+        label: Carrusel de inicio
+        file: data/carrusel.json
+        format: json
+        fields:
+          - label: Diapositivas
+            name: slides
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: Título, name: titulo, widget: string}
+              - {label: Texto, name: texto, widget: text}
+              - {label: Imagen, name: imagen, widget: image}
+              - {label: Etiqueta, name: etiqueta, widget: string, required: false}
+              - {label: Texto del botón, name: boton_texto, widget: string, required: false}
+              - {label: Enlace del botón, name: boton_enlace, widget: string, required: false}
+      - name: juegos
+        label: Juegos
+        file: data/juegos.json
+        format: json
+        fields:
+          - label: Juegos
+            name: juegos
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: Título, name: titulo, widget: string}
+              - {label: Descripción, name: descripcion, widget: text}
+              - {label: Imagen, name: imagen, widget: image}
+              - {label: Estado, name: estado, widget: select, options: ["Disponible", "En desarrollo", "Próximamente"]}
+              - {label: Modo de juego, name: modo, widget: string}
+              - {label: Enlace donde se juega (itch.io, Steam, etc.), name: enlace, widget: string, required: false, hint: "Solo se muestra el botón si el estado es Disponible", pattern: ['^https?://', "Debe empezar con https://"]}
+              - {label: Texto del botón, name: texto_boton, widget: string, required: false, default: "Jugar ahora"}
+      - name: novedades
+        label: Novedades
+        file: data/novedades.json
+        format: json
+        fields:
+          - label: Novedades
+            name: novedades
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - {label: Fecha, name: fecha, widget: string}
+              - {label: Título, name: titulo, widget: string}
+              - {label: Texto, name: texto, widget: text}

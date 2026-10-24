@@ -1,13 +1,7 @@
 {
   "juegos": [
-    {
-      "titulo": "BATty",
-      "descripcion": "Be a little bat. Try to arrive with your family.",
-      "imagen": "/img/uploads/juego1.svg",
-      "estado": "Disponible",
-      "modo": "Una tecla",
-      "enlace": "https://dlamilla.itch.io/batty",
-      "texto_boton": "Jugar ahora"
-    }
+    {"titulo": "Pixel Arena", "descripcion": "Combates rápidos en arenas de píxeles. Ejemplo: cambia este texto desde el panel.", "imagen": "img/juego1.svg", "estado": "En desarrollo", "modo": "Multijugador · 2 a 4 jugadores", "enlace": "", "texto_boton": ""},
+    {"titulo": "Cubo Rush", "descripcion": "Carreras de obstáculos con tus amigos. Ejemplo de juego próximo.", "imagen": "img/juego2.svg", "estado": "Próximamente", "modo": "Multijugador en línea", "enlace": "", "texto_boton": ""},
+    {"titulo": "Mundo Compartido", "descripcion": "Explora y construye junto a otros jugadores. Ejemplo de juego disponible.", "imagen": "img/juego3.svg", "estado": "Disponible", "modo": "Cooperativo", "enlace": "https://tu-usuario.itch.io/mundo-compartido", "texto_boton": "Jugar en itch.io"}
   ]
 }
