@@ -1,0 +1,13 @@
+{
+  "juegos": [
+    {
+      "titulo": "BATty",
+      "descripcion": "Be a little bat. Try to arrive with your family.",
+      "imagen": "/img/uploads/juego1.svg",
+      "estado": "Disponible",
+      "modo": "Una tecla",
+      "enlace": "https://dlamilla.itch.io/batty",
+      "texto_boton": "Jugar ahora"
+    }
+  ]
+}
