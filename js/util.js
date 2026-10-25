@@ -7,7 +7,7 @@ function el(etiqueta, clase, texto) {
 }
 
 async function cargarJSON(ruta) {
-  const r = await fetch(ruta);
+  const r = await fetch(ruta, { cache: 'no-cache' }); // siempre pide la versión más reciente
   if (!r.ok) throw new Error('No se pudo cargar ' + ruta);
   return r.json();
 }
